@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style-cafe.css">
+    <title>Conoce mas sobre el cafe</title>
+</head>
+
+<body>
+    <div data-scroll-container>
+     <!-- 🔝 Menú de navegación -->
+  <nav class="navbar">
+   
+    <div class="logo" href="#"  class="logo"> 
+            <img src="https://i.pinimg.com/736x/be/6f/03/be6f034c86d4ba77a0b58d8188a67461.jpg" alt="logo de la compañia">
+            <h2 class="nombre-empresa">Catpuccino</h2>
+            </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+    </ul>
+  </nav>
+    <header>
+        <h1>CONOCE MAS SOBRE EL CAFÉ</h1>
+    </header>
+    <main>
+        <div class="wrap-img">
+        <img class="img-cafe" src="https://images.pexels.com/photos/7791287/pexels-photo-7791287.jpeg" alt="cafe">
+        </div>
+        <div class="wrap">
+        <h2>Origen del café</h2>
+
+        <p> El café es una de las bebidas más consumidas en el mundo. Sin el café no se entienden desayunos ni
+            sobremesas. Pero además de ser una de las bebidas más consumidas en el mundo, el origen del café es una
+            historia llena de curiosidades.
+        </p>
+        <p>
+            La historia del café empieza en el cuerno de África, en Etiopía, sobre el siglo XI. Se sabe el origen
+            geográfico, la provincia de Kaffa, pero no el momento exacto, ya que no existen documentos sobre cuando el
+            hombre empezó a consumir granos de café.
+        </p>
+        <p>
+            La leyenda que data del 700 d.C., cuenta que un miembro de la tribu de Kaldi, habitantes de las zonas de más
+            altitud de Etiopía, observó como las cabras tenían mucha más energía tras comer un tipo de frutos parecidos
+            a las cerezas. Kaldi informó el descubrimiento de las “cabras danzantes”. Al probarlas él mismo descubrió
+            propiedades energizantes y excitantes y las trasladó a su tribu. Sea cierta o no esta leyenda sobre el
+            origen del café, de lo que no cabe duda y está documentado es que el café proviene originalmente de
+            “Etiopía” y que en el siglo XV había plantaciones en Yemen y un gran comercio de café en Sudán y Arabia a
+            través del puerto en yemení de Moca.
+        </p>
+        <p>Otra versión de la leyenda dice que Kaldi compartió las bayas con un monje que al principio no estaba de
+            acuerdo con su uso y las arrojó al fuego. Sorprendentemente el resultado fue un aroma maravilloso y
+            agradable que dio lugar al primer café tostado. Poco después, los granos se molieron e hirvieron para
+            producir una bebida que debe haber sido similar a lo que hoy en día conocemos como café
+
+            Los holandeses fueron los primeros europeos en conseguir semillas fértiles, llevar a su país y cultivar la
+            planta en invernadero en 1616. Holanda fue la responsable que empezara el cultivo del café en Asia y partes
+            de América que actualmente son los mayores productores de café en el mundo. Entre los siglos XVII y XVIII se
+            comenzó a cultivar café en India y en la isla de Java, en la actual Indonesia.
+        </p>
+        </div>
+        <div class="wrap-btn">
+            <a href="/index.html"><button class="button">VOLVER</button></a>
+        </div>
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollContainer = document.querySelector('[data-scroll-container]');
+
+  if (!scrollContainer) return; // seguridad
+
+  const scroll = new LocomotiveScroll({
+    el: scrollContainer,
+    smooth: true,
+    lerp: 0.07,
+    resetNativeScroll: true,
+    smartphone: { smooth: false },
+    tablet: { smooth: false }
+  });
+
+  // Recalcular cuando todo esté listo
+  window.addEventListener("load", () => scroll.update());
+});
+</script>
+     
+</body>
+
+</html>

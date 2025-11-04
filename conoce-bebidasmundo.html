@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cafe.css">
+    <title>Conoce mas sobre el cafe en el mundo</title>
+</head>
+
+<body>
+    <div data-scroll-container>
+    <!-- 🔝 Menú de navegación -->
+    <nav class="navbar">
+
+        <div class="logo" href="#" class="logo">
+            <img src="https://i.pinimg.com/736x/be/6f/03/be6f034c86d4ba77a0b58d8188a67461.jpg" alt="logo de la compañia">
+            <h2 class="nombre-empresa">Catpuccino</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>CONOCE MAS SOBRE LAS BEBIDAS DE CAFÉ</h1>
+    </header>
+    <main>
+        <div class="wrap-img">
+            <img class="img-cafe" src="https://cdn.pixabay.com/photo/2014/08/22/21/25/coffee-424763_1280.jpg" alt="Cafemundial">
+        </div>
+        <div class="wrap">
+            <h2>CAFÉ GLOBAL</h2>
+
+            <p>
+                ☕✨ Un viaje por el mundo a través del café
+
+                En Etiopía, donde nació el café, cada sorbo es una experiencia casi espiritual. La ceremonia etíope no
+                es solo preparar una bebida, es un ritual que puede extenderse por horas. Imagina el aroma de los granos
+                recién tostados llenando la sala, el sonido rítmico del mortero al molerlos, y finalmente el burbujeo en
+                la jebena, la jarra de barro tradicional. Tres rondas de café se comparten: la primera para la amistad,
+                la segunda para el respeto y la tercera para la bendición. No es solo beber café: es compartir vida,
+                historias y hospitalidad.
+            </p>
+            <p>
+                 En Turquía y todo el Medio Oriente, el café turco tiene un encanto especial. Se prepara lentamente en un
+                cezve, un pequeño recipiente de cobre, hasta que la espuma densa anuncia que está listo. Su sabor es
+                intenso y se sirve en tazas diminutas que invitan a saborearlo con calma. Pero lo mágico viene después:
+                la borra del café, con sus formas caprichosas, se convierte en un oráculo para leer la fortuna. Aquí, el
+                café es respeto, tradición y un puente entre lo cotidiano y lo misterioso.
+
+            </p>
+            <p>
+               En Italia, el café es pura energía y estilo. El espresso —corto, potente y lleno de aroma— se bebe de
+                pie, rápidamente, en la barra de un café bullicioso. Es un ritual veloz pero imprescindible, que marca
+                la rutina del día. El cappuccino, con su espuma cremosa, es para la mañana únicamente; pedirlo después
+                del almuerzo es visto como un error casi cultural. En Italia, el café no es solo bebida, es una
+                declaración de identidad y pasión por la calidad.
+            </p>
+            <p>
+               En Suecia, el café adquiere un aire cálido y pausado con el famoso fika. No se trata solo de beberlo,
+                sino de hacer una pausa consciente: sentarse, compartir un pastel de canela o un pan dulce y conversar
+                con calma. El fika es tan importante que en oficinas y universidades se convierte en un momento sagrado
+                del día. Es una forma de recordarse a uno mismo que la vida también está hecha de pausas y compañía.
+            </p>
+            <p>
+                En Colombia, el “tinto” es mucho más que una taza de café negro. Es la manera más sencilla y directa de
+                decir “bienvenido”. Apenas llegas a una casa o a un negocio, te ofrecen uno con una sonrisa. Endulzado
+                con panela, este café acompaña las charlas cotidianas, las mañanas en el campo y las tardes en la
+                ciudad. Es un gesto cálido y un símbolo de identidad nacional.
+            </p>
+            <p>
+                En Brasil, el cafézinho está en todas partes. Fuerte, caliente y casi siempre dulce, se sirve en tazas
+                pequeñas que circulan como pequeños abrazos líquidos. Nadie se va de una casa, oficina o tienda sin que
+                le ofrezcan un cafézinho. En este país, el café es hospitalidad inmediata, un código no escrito de
+                cortesía.
+            </p>
+            <p>
+                En Vietnam, la tradición toma un giro inesperado y refrescante. El cà phê đá, preparado con leche
+                condensada y servido con hielo, combina lo intenso del café con lo dulce y lo fresco. Lo encuentras en
+                cafeterías callejeras, entre el bullicio de motos y mercados. Cada vaso es un recordatorio del ingenio
+                local y de la influencia francesa que dejó huella en su manera de disfrutarlo.
+
+                
+
+            </p>
+            <p>
+                En México, el café de olla es puro hogar. Preparado en una olla de barro con canela y piloncillo,
+                desprende un aroma que envuelve y reconforta. No es solo bebida: es tradición, es sentarse alrededor de
+                la mesa con familia o amigos, sobre todo en el campo, y dejarse abrazar por su dulzura especiada. Un
+                sorbo de café de olla sabe a calidez, raíces y memoria.
+            </p>
+        </div>
+        <div class="wrap-btn">
+            <a href="/index.html"><button class="button">VOLVER</button></a>
+        </div>
+    </main>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollContainer = document.querySelector('[data-scroll-container]');
+
+  if (!scrollContainer) return; // seguridad
+
+  const scroll = new LocomotiveScroll({
+    el: scrollContainer,
+    smooth: true,
+    lerp: 0.07,
+    resetNativeScroll: true,
+    smartphone: { smooth: false },
+    tablet: { smooth: false }
+  });
+
+  // Recalcular cuando todo esté listo
+  window.addEventListener("load", () => scroll.update());
+});
+</script>
+
+</body>
+
+</html>

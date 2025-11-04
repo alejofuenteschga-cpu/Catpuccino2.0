@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <title>Catpuccino</title>
+</head>
+<body>
+    <div data-scroll-container>
+    <header>
+        <a href="#"  class="logo">
+            <img src="https://i.pinimg.com/736x/be/6f/03/be6f034c86d4ba77a0b58d8188a67461.jpg" alt="logo de la compañia">
+            <h2 class="nombre-empresa">Catpuccino</h2>
+        </a>
+          <nav>
+            <a href="#" class="nav-link">Inicio</a>
+            <a href="menu.html" class="nav-link">Menú</a>
+            <a href="quienes-somos.html" class="nav-link">¿Quienes somos?</a>
+          </nav>
+    </header>
+    
+     <div class="container">
+        <div class="text-content">
+            <h2>Conoce mas sobre el cafe y su historia</h2>
+            <p>El café es una de las bebidas más consumidas en el mundo. Sin el café no se entienden desayunos ni sobremesas. Pero además de ser una de las bebidas más consumidas en el mundo, el origen del café es una historia llena de curiosidades.</p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="conoce-cafe.html"><button class="button">+ Info</button></a>
+        </div>
+        <div class="image-content">
+            <img src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg" alt="café">
+        </div>
+    </div>
+     <div class="container">
+        
+        <div class="image-content">
+            <img src="https://images.pexels.com/photos/31244283/pexels-photo-31244283.jpeg" alt="Cat-cup">
+        </div>
+        <div class="text-content">
+            <h2>🐾 ¿Sabías que en el antiguo Egipto los gatos eran considerados sagrados?</h2>
+            <p>Se les cuidaba como a reyes y hasta se les momificaba.
+             ¡Descubre más sobre la increíble historia de estos felinos tan especiales!
+            </p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="conoce-gatos.html"><button class="button">+ Info</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-content">
+            <h2>Café global: sabores y culturas</h2>
+            <h2>En Etiopía, el café no es solo una bebida, ¡es un ritual social!</h2>
+            <p> 
+             La ceremonia del café etíope puede durar hasta dos horas y se considera un gesto de respeto y hospitalidad.
+             Prepararlo es todo un arte: se tuestan los granos frente a los invitados, se muelen a mano y se sirven en 
+             tres rondas que simbolizan <span class="resaltado">amistad, respeto y bendición.</span></p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="conoce-bebidasmundo.html"><button class="button">+ Info</button></a>
+        </div>
+        <div class="image-content">
+            <img src="https://images.pexels.com/photos/7412006/pexels-photo-7412006.jpeg" alt="Mapa de granos de café">
+        </div>
+      </div>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañia</h4>
+                    <ul>
+                        <li><a href="nosotros.html"> Nosotros</a></li>
+                        <li><a href="servicios.html"> Nuestros servicios</a></li>
+                        <li><a href="privacidad.html"> Politica de privacidad</a></li>
+                        <li><a href="afiliate.html"> Afiliate</a></li>
+                    </ul>
+                </div>
+               
+                 <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="preguntas.html"> Preguntas</a></li>
+                        <li><a href="compras.html"> Compras</a></li>
+                        <li><a href="envios.html"> Envios</a></li>
+                        <li><a href="status.html"> Estatus de envio</a></li>
+                         <li><a href="pago.html"> Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="compras.html"> Compras</a></li>
+                        <li><a href="envios.html"> Envios</a></li>
+                        <li><a href="status.html"> Estatus de envio</a></li>
+                         <li><a href="pago.html"> Pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollContainer = document.querySelector('[data-scroll-container]');
+
+  if (!scrollContainer) return; // seguridad
+
+  const scroll = new LocomotiveScroll({
+    el: scrollContainer,
+    smooth: true,
+    lerp: 0.07,
+    resetNativeScroll: true,
+    smartphone: { smooth: false },
+    tablet: { smooth: false }
+  });
+
+  // Recalcular cuando todo esté listo
+  window.addEventListener("load", () => scroll.update());
+});
+</script>
+
+
+</body>
+

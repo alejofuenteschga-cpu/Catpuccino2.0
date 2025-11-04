@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+  <div data-scroll-container>
+  <!-- 🔝 Menú de navegación -->
+  <nav class="navbar">
+    <div class="logo">🍴 Menu</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+    </ul>
+  </nav>
+
+  <!-- Encabezado -->
+  <header id="inicio">
+    <h1>Bienvenido a Catpuccino</h1>
+    <p>Disfruta de nuestra deliciosa comida y bebidas</p>
+  </header>
+
+  <!-- Sección del Menú -->
+  <main class="menu" id="menu">
+    <!-- Comida -->
+    <section>
+      <h2>Postres</h2>
+      <ul>
+        <li><span>Gatoflan (Chocoflan)</span> <span class="precio">$2.20</span></li>
+        <li><span>Cola cremosa (Budin)</span> <span class="precio">$1.40</span></li>
+        <li><span>Bigotes de chocolate (Brownie de chocolate)</span> <span class="precio">$1.80</span></li>
+        <li><span>Gatito oreo (Cheescake de oreo)</span> <span class="precio">$2.00</span></li>
+        <li><span>Gato negro (helado de vainilla con Coca Cola) </span> <span class="precio">$3.00</span></li>
+        <li><span>Fruti gatuno (Tuttifrutti)</span> <span class="precio">$3.50</span></li>
+        <li><span>Minina tarta</span> <span class="precio">$1.80</span></li>
+        <li><span>Cupcats (cupcakes de chocolate)</span> <span class="precio">$1.50</span></li>
+        <li><span>Patitas crujientes (Galletas)</span> <span class="precio">$1.00</span></li>
+        <li><span>Miaufajores (Alfajores)</span> <span class="precio">$2.50</span></li>
+      </ul>
+    </section>
+
+    <!-- Bebidas -->
+    <section>
+      <h2>Bebidas</h2>
+      <ul>
+           <li><span>Miau-press (Café espresso)</span> <span class="precio">$1.50</span></li>
+           <li><span>Catpuccino (Capuccino)</span> <span class="precio">$4.00</span></li>
+           <li><span>Gato americano (Café americano)</span> <span class="precio">$2.00</span></li>
+           <li><span>Bigotes de mocca (Mocaccino)</span> <span class="precio">$3.00</span></li> 
+           <li><span>Latte miau (Café latte)</span> <span class="precio">$2.50</span></li>
+           <li><span>Nube gatuna (Café con leche)</span> <span class="precio">$2.50</span></li>
+           <li><span>Gato frío (Café frío)</span> <span class="precio">$3.50</span></li>
+           <li><span>Agua</span> <span class="precio">$1.00</span></li>
+           <li><span>Burbuja gatuna</span> <span class="precio"></span></li>
+           <li><span>Coca cola</span> <span class="precio">$1.75</span></li>
+           <li><span>Sprite</span> <span class="precio">$1.65</span></li>
+           <li><span>Jugo de naranja</span> <span class="precio">$1.50</span></li>
+           <li><span>Limonada</span> <span class="precio">$2.00</span></li>
+      </ul>
+    </section>
+       
+    <section>
+      <h2>Comida salada</h2>
+      <ul>
+           <li><span>Miau pollo deluxe </span> <span class="precio">$3.50</span></li>
+           <li><span>Miau Pink</span> <span class="precio">$3.00</span></li>
+           <li><span>Combo del Michi Feliz (Sandwich de pasta de pollo o jamón acompañado de papas fritas y una limonada fresca)</span> <span class="precio">$5.00</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Contacto -->
+  <footer id="contacto">
+    <p>📍 Dirección: Calle Principal, Soyapango, El Salvador</p>
+    <p>📞 Teléfono: +503 1234 5678</p>
+    <p>© 2025 Catpuccino</p>
+  </footer>
+ </div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollContainer = document.querySelector('[data-scroll-container]');
+
+  if (!scrollContainer) return; // seguridad
+
+  const scroll = new LocomotiveScroll({
+    el: scrollContainer,
+    smooth: true,
+    lerp: 0.07,
+    resetNativeScroll: true,
+    smartphone: { smooth: false },
+    tablet: { smooth: false }
+  });
+
+  // Recalcular cuando todo esté listo
+  window.addEventListener("load", () => scroll.update());
+});
+</script>
+</body>
+</html>

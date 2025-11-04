@@ -1,0 +1,291 @@
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color:rgb(245, 245, 245);
+    padding: 0;
+    
+}
+
+
+.logo h2{
+     color: rgb(56, 32, 12);
+}
+
+.logo h2:hover{
+    color: #ffb8ed;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(56, 32, 12);
+}
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background-color: rgb(244,228, 202);
+    align-items: center;
+    padding: 10px;
+    position:sticky;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    transition: all .3s ease;
+    
+
+}
+nav a:hover{
+    color: #ffb8ed;
+    
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*este es el nuevo codigo*/
+.container {
+    display: flex; /* Usar flexbox para colocar la imagen y el texto */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    background-color:#FFFF;
+}
+.text-content {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para el texto */
+
+    border-radius: 8px; /* Bordes redondeados */
+    margin-right: 20px; /* Espaciado a la derecha */
+}
+.image-content {
+    flex: 1; /* Ocupa una parte igual del espacio */
+}
+.image-content img {
+    max-width: 100%; /* Asegurar que la imagen no exceda el contenedor */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+h2 {
+    font-size: 24px;
+    color: #6d4c41; /* Color marrón */
+}
+p {
+    color: #333; /* Color del texto */
+}
+ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding-left: 0; /* Quitar padding */
+}
+li {
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+/*Aqui termina*/
+
+.container {
+    display: flex; /* Usar flexbox para colocar la imagen y el texto */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    background-color:#FFFF;
+}
+.text-content {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para el texto */
+
+    border-radius: 8px; /* Bordes redondeados */
+    margin-right: 20px; /* Espaciado a la derecha */
+}
+.image-content {
+    flex: 1; /* Ocupa una parte igual del espacio */
+}
+.image-content img {
+    max-width: 100%; /* Asegurar que la imagen no exceda el contenedor */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+h2 {
+    font-size: 24px;
+    color: #6d4c41; /* Color marrón */
+}
+p {
+    color: #333; /* Color del texto */
+}
+ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding-left: 0; /* Quitar padding */
+}
+li {
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+/*Aqui termina*/
+/*este es el otro*/
+.container {
+    display: flex; /* Usar flexbox para colocar la imagen y el texto */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    background-color:#FFFF;
+}
+.text-content {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para el texto */
+
+    border-radius: 8px; /* Bordes redondeados */
+    margin-right: 20px; /* Espaciado a la derecha */
+}
+.image-content {
+    flex: 1; /* Ocupa una parte igual del espacio */
+}
+.image-content img {
+    max-width: 100%; /* Asegurar que la imagen no exceda el contenedor */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+h2 {
+    font-size: 24px;
+    color: #6d4c41; /* Color marrón */
+}
+p {
+    color: #333; /* Color del texto */
+}
+ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding-left: 0; /* Quitar padding */
+}
+li {
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+
+
+button{
+     font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    color: rgb(56, 32, 12);
+    background-color: rgb(244,228, 202);
+    
+}
+button:hover{
+    color: #ffb8ed;
+   
+}
+ 
+p{
+    color: rgb(56, 32, 12);
+}
+
+.footer{
+background-color:rgb(250, 155, 49);
+padding: 80px 0;
+
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: rgb(56, 32, 12);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(108, 67, 20) ;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 18px ;
+    text-decoration: none ;
+    color: rgb(91, 52, 20) ;
+    display:block ;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: #FFFF;
+    padding-left: 6px;
+
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFF;
+    transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color:rgb(250, 155, 49) ;
+
+}
+
+@media(max-widht:991px) {
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.resaltado{
+    color: black;
+    font-weight:600;
+}
+
+
+/* Esto es nuevo para que todo se mueva suave*/
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* Locomotive controla el scroll */
+  background-color: rgb(245, 245, 245);
+}
+
+
+/* Asegura que el footer esté incluido en el scroll */
+footer.footer {
+  position: relative;
+  z-index: 2;
+}
+
+
+[data-scroll-container] {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; /* Locomotive lo controla internamente */
+}
+[data-scroll-container] {
+  will-change: transform;
+}

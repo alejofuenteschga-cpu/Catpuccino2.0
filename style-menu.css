@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔝 Barra de navegación */
+.navbar {
+  background: rgb(244,228, 202);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(56, 32, 12);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(56, 32, 12);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffeaa7;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  background: rgb(233, 206, 162);
+  color:rgb(56, 32, 12);
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  
+}
+
+/* Menú de comida */
+.menu {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu section {
+  margin-bottom: 25px;
+}
+
+.menu h2 {
+  border-bottom: 2px solid rgb(56, 32, 12);
+  padding-bottom: 5px;
+  color: rgb(56, 32, 12);
+  font-size: 1.5em;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 1.1em;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.precio {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background: #f2f2f2;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    background: #d35400;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 15px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .menu {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .menu li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em;
+  }
+
+  .precio {
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* Locomotive controla el scroll */
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* Asegura que el footer esté incluido en el scroll */
+footer.footer {
+  position: relative;
+  z-index: 2;
+}
+
+
+[data-scroll-container] {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; /* Locomotive lo controla internamente */
+}
+[data-scroll-container] {
+  will-change: transform;
+}

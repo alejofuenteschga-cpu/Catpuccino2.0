@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style-menu.css">
 </head>
 <body>
-  <div data-scroll-container>
+ 
   <!-- 🔝 Menú de navegación -->
   <nav class="navbar">
     <div class="logo">🍴 Menu</div>
@@ -79,27 +79,7 @@
     <p>📞 Teléfono: +503 1234 5678</p>
     <p>© 2025 Catpuccino</p>
   </footer>
- </div>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const scrollContainer = document.querySelector('[data-scroll-container]');
-
-  if (!scrollContainer) return; // seguridad
-
-  const scroll = new LocomotiveScroll({
-    el: scrollContainer,
-    smooth: true,
-    lerp: 0.07,
-    resetNativeScroll: true,
-    smartphone: { smooth: false },
-    tablet: { smooth: false }
-  });
-
-  // Recalcular cuando todo esté listo
-  window.addEventListener("load", () => scroll.update());
-});
-</script>
 </body>
 </html>
+
 

@@ -164,11 +164,3 @@ footer.footer {
 }
 
 
-[data-scroll-container] {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden; /* Locomotive lo controla internamente */
-}
-[data-scroll-container] {
-  will-change: transform;
-}

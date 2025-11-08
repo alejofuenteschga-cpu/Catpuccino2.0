@@ -9,7 +9,7 @@
 </head>
 
 <body>
-     <div data-scroll-container>
+     
     <!-- 🔝 Menú de navegación -->
     <nav class="navbar">
 
@@ -130,30 +130,11 @@
             <a href="index.html"><button class="button">VOLVER</button></a>
         </div>
     </main>
-    </div>
-     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const scrollContainer = document.querySelector('[data-scroll-container]');
-
-  if (!scrollContainer) return; // seguridad
-
-  const scroll = new LocomotiveScroll({
-    el: scrollContainer,
-    smooth: true,
-    lerp: 0.07,
-    resetNativeScroll: true,
-    smartphone: { smooth: false },
-    tablet: { smooth: false }
-  });
-
-  // Recalcular cuando todo esté listo
-  window.addEventListener("load", () => scroll.update());
-});
-</script>
+   
 
 </body>
 
 
 </html>
+
 

@@ -136,7 +136,7 @@ button{
 
 html, body {
   height: 100%;
-  overflow: hidden; /* Locomotive controla el scroll */
+  
   background-color: rgb(244,228, 202);
 }
 
@@ -146,5 +146,6 @@ footer.footer {
   position: relative;
   z-index: 2;
 }
+
 
 
